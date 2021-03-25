@@ -2,7 +2,7 @@ import json
 from django.urls.base import reverse
 from rest_framework import status
 
-from core.models import User, Content
+from core.models import User
 from .test_setup import TestSetUp
 
 
