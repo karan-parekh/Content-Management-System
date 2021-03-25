@@ -58,7 +58,7 @@ class TestSetUp(APITestCase):
         return super().setUp()
 
     def create_content(self):
-        with open("media/media/Karan_Parekh_CV.pdf", encoding="utf-8", errors="ignore") as file:
+        with open(self.document_path, encoding="utf-8", errors="ignore") as file:
             file = File(file)
             data = self.content_data
             data['document'] = file
